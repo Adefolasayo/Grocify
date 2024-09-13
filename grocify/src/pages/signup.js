@@ -1,26 +1,92 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../images/logo.png';
 import patternBG from '../images/patternBG.png';
 
+
 const SignupPage = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+    phoneNumber: '',
+    password: '',
+    confirmPassword: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you would typically handle the form submission,
+    // such as sending the data to an API
+    console.log('Form submitted:', formData);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center" style={{backgroundImage: `url(${patternBG})`, backgroundSize: 'cover'}}>
-      <div className="bg-white p-8 rounded-lg shadow-md w-[350px]">
-        <img src={logo} alt="Grocify Logo" className="w-32 mx-auto mb-4" />
-        <h2 className="text-2xl font-bold text-center mb-4">Sign Up for Grocify</h2>
-        <form>
-          <div className="space-y-4">
-            <input type="text" placeholder="Full Name" className="w-full p-2 border rounded" />
-            <input type="email" placeholder="Email" className="w-full p-2 border rounded" />
-            <input type="password" placeholder="Password" className="w-full p-2 border rounded" />
-            <input type="password" placeholder="Confirm Password" className="w-full p-2 border rounded" />
-          </div>
-          <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded mt-4">Sign Up</button>
-        </form>
-        <p className="text-center text-sm mt-4">
-          Already have an account? <a href="#" className="text-blue-600 hover:underline">Log in</a>
-        </p>
+    <div className="flex h-screen">
+      <div className="w-1/2 bg-[#f5f5dc] p-8 flex flex-col">
+        <img src={logo} alt="Grocify Logo" className="w-32 mb-8" />
+        <div className="flex-grow flex items-center justify-center">
+          <form onSubmit={handleSubmit} className="w-full max-w-md">
+            <div className="bg-white rounded-lg p-8 shadow-md">
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="E-MAIL"
+                className="w-full mb-4 p-2 border border-[#4a7c59] rounded"
+                required
+              />
+              <input
+                type="tel"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                placeholder="PHONE NUMBER"
+                className="w-full mb-4 p-2 border border-[#4a7c59] rounded"
+                required
+              />
+              <input
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                placeholder="PASSWORD"
+                className="w-full mb-4 p-2 border border-[#4a7c59] rounded"
+                required
+              />
+              <input
+                type="password"
+                name="confirmPassword"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                placeholder="CONFIRM PASSWORD"
+                className="w-full mb-6 p-2 border border-[#4a7c59] rounded"
+                required
+              />
+              <button
+                type="submit"
+                className="w-full bg-[#4a7c59] text-white py-2 rounded hover:bg-[#3d6b4a] transition duration-300"
+              >
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
+      <div 
+        className="w-1/2 bg-[#4a7c59] bg-opacity-90 bg-blend-multiply"
+        style={{
+          backgroundImage: `url(${patternBG})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      />
     </div>
   );
 };
