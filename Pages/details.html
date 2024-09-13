@@ -127,6 +127,21 @@
         .add-to-cart:hover {
             background-color: #3d6b4a;
         }
+        .logo-container {
+    background-color: white;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grocify-logo {
+    height: 2rem;
+    width: auto;
+}
+
+
         @media (min-width: 768px) {
             .product-card {
                 flex-direction: row;
@@ -164,8 +179,11 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <img src="logo.png" alt="Grocify Logo" class="h-8 w-auto">
+            <div class="logo-container">
+                <img src="../Login_signup/logo.png" alt="Grocify Logo" class="grocify-logo">
+            </div>
         </div>
+        
         <div class="search-container">
             <input type="text" placeholder="Search" class="search-input">
             <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
