@@ -66,12 +66,22 @@ body, html {
     margin-bottom: 1rem;
 }
 
-.name-row input {
+.name-row .input-group {
     width: 48%;
 }
 
-input {
+.input-group {
     margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+input {
+    width: 100%;
     padding: 10px;
     border: 2px solid white;
     border-radius: 20px;
@@ -81,6 +91,12 @@ input {
 
 input::placeholder {
     color: #999;
+}
+
+.password-requirement {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-top: 0.25rem;
 }
 
 button {
