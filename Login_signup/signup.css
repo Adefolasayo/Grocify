@@ -122,3 +122,64 @@ button {
 button:hover {
     background-color: #45a049;
 }
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .content {
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 250px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .signup-form {
+        width: 80%;
+        max-width: 400px;
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .bg-left {
+        display: none;
+    }
+
+    .bg-right {
+        width: 100%;
+    }
+
+    .content {
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+
+    .signup-form {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .name-row {
+        flex-direction: column;
+    }
+
+    .name-row .input-group {
+        width: 100%;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .password-requirement {
+        font-size: 0.7rem;
+    }
+}
