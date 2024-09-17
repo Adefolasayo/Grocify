@@ -77,14 +77,25 @@ body, html {
 label {
     display: block;
     margin-bottom: 0.5rem;
-    color: white;
+    color: black;
 }
+
+.name-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.name-row .input-group {
+    width: 47%;
+}
+
 
 input {
     width: 100%;
     padding: 10px;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: white;
     color: #333;
 }
