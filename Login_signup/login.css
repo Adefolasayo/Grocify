@@ -37,7 +37,7 @@ body {
     top: 0;
     height: 100%;
     width: auto;
-    transform: translateX(-20%); /* Adjust this value to control how far it encroaches */
+    transform: translateX(-3%); /* Adjust this value to control how far it encroaches */
 }
 
 
