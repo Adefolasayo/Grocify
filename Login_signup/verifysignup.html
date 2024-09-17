@@ -45,6 +45,34 @@
             margin-top: 1rem;
             display: inline-block;
         }
+        @media screen and (max-width: 1024px) {
+        .verify-content {
+            margin-right: 5%;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .email {
+            font-size: 1rem;
+        }
+    }
+
+    /* Mobile Styles */
+    @media screen and (max-width: 768px) {
+        .verify-content {
+            margin-right: 0;
+            width: 90%;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 1.8rem;
+        }
+        .code-input input {
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+        }
+    }
     </style>
 </head>
 <body>
