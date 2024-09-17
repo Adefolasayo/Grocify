@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: #3cba68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+}
+
+.bg-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    transform: translateX(-20%); /* Adjust this value to control how far it encroaches */
+}
+
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 400px;
+    margin-bottom: 15rem; 
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    padding: 1rem;
+    border: 3px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+button {
+    padding: 1rem;
+    border: 3px solid white;
+    border-radius: 25px;
+    background-color: white;
+    color: #3cba68;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #3cba68;
+    color: white;
+}
+
+.forgot-password {
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
