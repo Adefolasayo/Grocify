@@ -103,3 +103,46 @@ button:hover {
 .forgot-password:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .bg-left, .bg-right {
+      width: 50%;
+      height: auto;
+    }
+    
+    .bg-right {
+      transform: translateX(0);
+    }
+    
+    .login-container {
+      max-width: 300px;
+      margin-top: -50px;
+    }
+    
+    .logo {
+      width: 150px;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .bg-left, .bg-right {
+      display: none;
+    }
+    
+    .login-container {
+      max-width: 250px;
+      margin-top: 0;
+    }
+    
+    .logo {
+      width: 120px;
+      margin-bottom: 2rem;
+    }
+    
+    input, button {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+  

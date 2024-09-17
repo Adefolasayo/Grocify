@@ -101,4 +101,59 @@ body, html {
   .log-in:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
+
+
+@media screen and (max-width: 1024px) {
+  .content {
+    max-width: 500px;
+    right: 3%;
+  }
   
+  h1, h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-pic {
+    width: 100%;
+  }
+  
+  .pattern-bg {
+    display: none;
+  }
+  
+  .content {
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 2rem;
+  }
+  
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 1rem;
+  }
+  
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
