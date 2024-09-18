@@ -46,7 +46,15 @@ body {
 .footer .logo {
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: left;
+    padding-left: 200px; /* Adjust this value to shift more or less to the left */
 }
+
+.footer .logo img {
+    max-width: 150px; 
+    height: auto;
+}
+
 .footer .columns {
     display: flex;
     justify-content: center;
@@ -65,12 +73,16 @@ body {
 }
 .footer .social-icons {
     margin-bottom: 20px;
+    text-align: left;
+    padding-left: 200px; /* Match this with the logo's padding-left */
 }
+
 .footer .social-icons a {
-    margin: 0 10px;
+    margin: 0 10px 0 0; /* Adjust horizontal spacing between icons */
     color: #333;
     font-size: 1.5em;
     text-decoration: none;
+    display: inline-block;
 }
 .footer .copyright {
     font-size: 0.9em;
