@@ -10,6 +10,31 @@
     position: relative;
     overflow: hidden;
 }
+.hero-logo {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 151px;
+    height: 40px;
+}
+.hero-nav {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.hero-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-nav a:hover {
+    text-decoration: underline;
+}
 
 .hero-image {
     position: absolute;
