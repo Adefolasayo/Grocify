@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
 }
 .newsletter-section {
-    background-color: #00A651;
+    background-color: #00A651; /* Keeping this as a fallback */
     padding: 50px 0;
     text-align: center;
     color: white;
-    background-image: url('https://placehold.co/1920x1080/00A651/00A651.png?text=Background+Pattern');
-    background-repeat: repeat;
-}
+    background-image: url('../images/pattern.png');
+} 
+
 .newsletter-section h2 {
     font-size: 2em;
     margin-bottom: 10px;
