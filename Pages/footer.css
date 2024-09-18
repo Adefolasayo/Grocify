@@ -58,19 +58,25 @@ body {
 .footer .columns {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
+
 .footer .column {
-    margin: 0 20px;
+    margin: 0 100px;
 }
+
 .footer .column h3 {
     font-size: 1em;
     margin-bottom: 10px;
 }
+
 .footer .column p {
     font-size: 0.9em;
     margin: 5px 0;
+    line-height: 2.5;
 }
+
+
 .footer .social-icons {
     margin-bottom: 20px;
     text-align: left;
