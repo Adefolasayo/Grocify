@@ -93,4 +93,61 @@ body {
 .footer .copyright {
     font-size: 0.9em;
     color: #666;
+    text-align: right;
+    padding-right: 100px; /* Adjust this value as needed */
+}
+
+
+/* Tablet Devices */
+@media screen and (max-width: 768px) {
+    .footer .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .column {
+        margin: 20px 0;
+    }
+
+    .footer .logo {
+        padding-left: 20px;
+    }
+
+    .footer .social-icons {
+        padding-left: 20px;
+    }
+
+    .footer .copyright {
+        padding-right: 20px;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+    .newsletter-section h2 {
+        font-size: 1.5em;
+    }
+
+    .newsletter-section p {
+        font-size: 1em;
+    }
+
+    .newsletter-form input[type="email"],
+    .newsletter-form button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer .logo img {
+        max-width: 120px;
+    }
+
+    .footer .social-icons a {
+        font-size: 1.2em;
+    }
+
+    .footer .copyright {
+        text-align: center;
+        padding-right: 0;
+    }
 }
