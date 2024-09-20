@@ -49,7 +49,7 @@
     align-items: center;
     gap: 70px;
     margin-top: 60px; /* Add this to remove any default margin */
-    margin-left: 200px;
+    margin-left: 400px;
 }
 .hero-nav a {
     color: white;
@@ -63,4 +63,41 @@
 
 .hero-nav a:hover {
     text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .hero-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    .hero-logo {
+        position: static;
+        width: 151px;
+        height: 40px;
+    }
+
+    .hero-nav {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .hero-nav a {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-image {
+        max-height: 100vh;
+    }
+
+    .hero-nav {
+        gap: 70px;
+    }
+
+    .hero-nav a {
+        font-size: 28px;
+    }
 }
