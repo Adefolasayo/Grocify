@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 866px;
+    height: 100vh;
     max-width: 1952px;
     margin: 0 auto;
     position: relative;
@@ -12,11 +12,9 @@
 }
 
 .hero-logo {
-    position: absolute;
-    top: 80px;
-    left: 20px;
     width: 151px;
     height: 40px;
+    margin-top: 0;
 }
 
 .hero-image {
@@ -30,41 +28,37 @@
 
 .hero-header {
     display: flex;
-    align-items: center; /* Update this line */
-    padding: 20px 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     position: absolute;
     top: 20px;
     left: 0;
     right: 0;
     z-index: 10;
 }
-.hero-logo {
-    width: 151px;
-    height: 40px;
-    margin-top: 0; /* Add this to remove any default margin */
-}
 
 .hero-nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 70px;
-    margin-top: 60px; /* Add this to remove any default margin */
-    margin-left: 400px;
+    gap: 20px;
+    margin-top: 20px;
 }
+
 .hero-nav a {
     color: white;
     text-decoration: none;
-    font-size: 28px; /* Increase the font size to 24px */
+    font-size: 20px;
     font-weight: 500;
-    line-height: 40px; /* Match the logo height */
+    line-height: 30px;
 }
-
-
 
 .hero-nav a:hover {
     text-decoration: underline;
 }
 
+/* Tablet styles */
 @media (min-width: 768px) {
     .hero-header {
         flex-direction: row;
@@ -72,22 +66,18 @@
         padding: 20px 50px;
     }
 
-    .hero-logo {
-        position: static;
-        width: 151px;
-        height: 40px;
-    }
-
     .hero-nav {
+        flex-direction: row;
         margin-top: 0;
-        margin-left: 0;
+        gap: 40px;
     }
 
     .hero-nav a {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
+/* Desktop styles */
 @media (min-width: 1024px) {
     .hero-image {
         max-height: 100vh;
@@ -95,6 +85,7 @@
 
     .hero-nav {
         gap: 70px;
+        margin-right: 800px;
     }
 
     .hero-nav a {
