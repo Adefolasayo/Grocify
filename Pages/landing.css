@@ -12,32 +12,33 @@
     display: flex;
     flex-direction: column;
 }
+
 .hero-content {
-    padding: 40px;
-    margin-top: 100px;
+    padding: 20px;
+    margin-top: 80px;
     z-index: 10;
 }
 
 .hero-title {
-    font-size: 48px;
+    font-size: 36px;
     color: white;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .hero-subtitle {
-    font-size: 24px;
+    font-size: 18px;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .hero-cta {
     background-color: white;
-    color: #006400; /* Dark green */
-    font-size: 18px;
+    color: #006400;
+    font-size: 16px;
     font-weight: bold;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -94,6 +95,7 @@
 .hero-nav a:hover {
     text-decoration: underline;
 }
+
 .shop-content {
     display: flex;
     align-items: flex-start;
@@ -101,7 +103,7 @@
 }
 
 .chat-icon {
-    width: 100px; /* Adjust as needed */
+    width: 100px;
     height: auto;
     margin-right: 20px;
 }
@@ -110,7 +112,26 @@
     flex: 1;
 }
 
-/* Tablet styles */
+@media (min-width: 480px) {
+    .hero-content {
+        padding: 30px;
+        margin-top: 90px;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 21px;
+    }
+
+    .hero-cta {
+        font-size: 17px;
+        padding: 11px 22px;
+    }
+}
+
 @media (min-width: 768px) {
     .hero-header {
         flex-direction: row;
@@ -127,6 +148,12 @@
     .hero-nav a {
         font-size: 22px;
     }
+
+    .hero-content {
+        padding: 40px;
+        margin-top: 100px;
+    }
+
     .hero-title {
         font-size: 64px;
     }
@@ -137,10 +164,11 @@
 
     .hero-cta {
         font-size: 20px;
+        padding: 12px 24px;
     }
+
     .shop-content {
         flex-direction: column;
-        align-items: center;
     }
 
     .chat-icon {
@@ -149,8 +177,6 @@
     }
 }
 
-
-/* Desktop styles */
 @media (min-width: 1024px) {
     .hero-image {
         max-height: 100vh;
@@ -164,6 +190,7 @@
     .hero-nav a {
         font-size: 28px;
     }
+
     .hero-content {
         margin-top: 150px;
         padding-left: 80px;
