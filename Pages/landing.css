@@ -100,6 +100,8 @@
     display: flex;
     align-items: flex-start;
     padding: 40px;
+    position: relative;
+    padding-right: 120px;
 }
 
 .chat-icon {
@@ -114,8 +116,8 @@
 
 .shop-header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -129,30 +131,21 @@
 
 .shop-title i {
     margin-right: 10px;
-    color: #006400; /* Dark green, matching your theme */
-}
-
-.shop-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
-    position: relative;
+    color: #006400;
 }
 
 .view-more {
+    position: absolute;
+    right: 40px;
+    top: 40px;
     color: #006400;
     text-decoration: none;
     font-weight: bold;
-    position: absolute;
-    right: 0;
 }
 
 .view-more:hover {
     text-decoration: underline;
 }
-
 
 @media (min-width: 480px) {
     .hero-content {
