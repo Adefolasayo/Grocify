@@ -94,6 +94,21 @@
 .hero-nav a:hover {
     text-decoration: underline;
 }
+.shop-content {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.chat-icon {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.shop-content-main {
+    flex: 1;
+}
 
 /* Tablet styles */
 @media (min-width: 768px) {
@@ -122,6 +137,15 @@
 
     .hero-cta {
         font-size: 20px;
+    }
+    .shop-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chat-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
