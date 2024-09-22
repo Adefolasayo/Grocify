@@ -112,6 +112,48 @@
     flex: 1;
 }
 
+.shop-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.shop-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.shop-title i {
+    margin-right: 10px;
+    color: #006400; /* Dark green, matching your theme */
+}
+
+.shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.view-more {
+    color: #006400;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+
+.view-more:hover {
+    text-decoration: underline;
+}
+
+
 @media (min-width: 480px) {
     .hero-content {
         padding: 30px;
