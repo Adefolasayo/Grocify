@@ -129,3 +129,41 @@
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+.products-section {
+    background-color: #f5f5db;
+    padding: 40px 20px;
+}
+
+.products-heading {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sort-options {
+    margin-bottom: 20px;
+}
+
+.sort-select {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sort-select:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
