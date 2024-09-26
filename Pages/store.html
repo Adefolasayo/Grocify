@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="store.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
    
 </head>
 <body>
@@ -24,7 +27,31 @@
             <i class="fas fa-user"></i>
         </div>
     </header>
-
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../images/carousel_1.jpg" alt="Carousel 1">
+                <div class="slide-content">
+                    <h2>Find The Best Stores at Low Prices</h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/carousel_2.jpg" alt="Carousel 2">
+                <div class="slide-content">
+                    <h2>10% off first five Orders</h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/carousel_3.png" alt="Carousel 3">
+                <div class="slide-content">
+                    <h2>HAPPY SHOPPING</h2>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
     <footer>
         <div class="newsletter-section">
             <h2>Stay in the know!</h2>
@@ -72,5 +99,18 @@
             <div class="copyright">© 2024 Grocify.</div>
         </div>
     </footer>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    
 </body>
 </html>
