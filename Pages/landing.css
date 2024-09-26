@@ -16,6 +16,7 @@
 .hero-content {
     padding: 20px;
     margin-top: 80px;
+    margin-left: 5%;
     z-index: 10;
 }
 
@@ -65,7 +66,7 @@
 
 .hero-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 20px 50px;
     position: absolute;
@@ -74,10 +75,14 @@
     right: 0;
     z-index: 10;
 }
+.hero-logo-container {
+    align-self: flex-start;
+}
 
 .hero-nav {
     display: flex;
     gap: 40px;
+   
 }
 
 .hero-nav a {
@@ -86,10 +91,12 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .hero-nav a:hover {
-    text-decoration: underline;
+    color: #f0f0f0;
+    transform: translateY(-2px);
 }
 
 .shop-content {
@@ -142,14 +149,14 @@
 .view-more:hover {
     text-decoration: underline;
 }
+
 .collections-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px 20px; /* This creates a 20px gap between rows and columns */
+    gap: 20px 20px;
     margin-top: 20px;
-    row-gap: 40px; /* This increases the gap between rows to 40px */
+    row-gap: 40px;
 }
-
 
 .collection-item {
     position: relative;
@@ -186,6 +193,7 @@
 .card-status {
     font-size: 14px;
 }
+
 .last-section {
     background-color: #c3e2b9;
     width: 100%;
@@ -199,7 +207,6 @@
     max-width: 100%;
     height: auto;
 }
-
 
 @media (max-width: 1024px) {
     .collections-grid {
@@ -299,6 +306,10 @@
     .hero-cta {
         font-size: 17px;
         padding: 11px 22px;
+    }
+
+    .hero-image {
+        opacity: 0.5;
     }
 
     .collection-card {
