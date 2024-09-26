@@ -51,6 +51,51 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
+    <section class="categories-section">
+        <h2 class="categories-heading">Categories</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="../images/pastries.png" alt="Pastries">
+                <p>Pastries</p>
+            </div>
+            <div class="category-card">
+                <img src="../images/wheat.png" alt="Wheat">
+                <p>Wheat</p>
+            </div>
+            <div class="category-card">
+                <img src="../images/meat.png" alt="Meat">
+                <p>Meat</p>
+            </div>
+            <div class="category-card">
+                <img src="../images/dairy.png" alt="Dairy">
+                <p>Dairy</p>
+            </div>
+            <div class="category-card">
+                <img src="../images/snacks.png" alt="Snacks">
+                <p>Snacks</p>
+            </div>
+            <div class="category-card">
+                <img src="../images/fish.png" alt="Fish">
+                <p>Fish</p>
+            </div>
+            <div class="category-card">
+                <img src="../images/meals.png" alt="Meals">
+                <p>Meals</p>
+            </div>
+            <div class="category-card">
+                <img src="../images/frozen.png" alt="Frozen">
+                <p>Frozen</p>
+            </div>
+            <div class="category-card">
+                <img src="../images/paper_goods.png" alt="Paper Goods">
+                <p>Paper Goods</p>
+            </div>
+            <div class="category-card">
+                <img src="../images/vegetables.png" alt="Vegetables">
+                <p>Vegetables</p>
+            </div>
+        </div>
+    </section>
     
     <footer>
         <div class="newsletter-section">
@@ -110,7 +155,33 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
     </script>
+    <script>
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.animation = 'pulse 0.5s';
+            });
+            card.addEventListener('animationend', () => {
+                card.style.animation = '';
+            });
+        });
+    
+        function getRandomColor() {
+            return `hsl(${Math.random() * 360}, 100%, 75%)`;
+        }
+    
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const originalColor = card.style.backgroundColor;
+                card.style.backgroundColor = getRandomColor();
+                setTimeout(() => {
+                    card.style.backgroundColor = originalColor;
+                }, 500);
+            });
+        });
+    </script>
+    
     
 </body>
 </html>
