@@ -95,24 +95,41 @@
                 <p>Vegetables</p>
             </div>
         </div>
-
-
     </section>
     <section class="products-section">
-    <h2 class="products-heading">PRODUCTS</h2>
-    <div class="sort-options">
-        <select class="sort-select">
-            <option value="">Sort by</option>
-            <option value="category">Category</option>
-            <option value="price">Price</option>
-            <option value="rating">Rating</option>
-        </select>
-    </div>
-    <div class="products-grid">
-        <!-- Product cards will go here -->
-    </div>
-</section>
-
+        <h2 class="products-heading">PRODUCTS</h2>
+        <div class="product-options">
+            <div class="sort-options">
+                <select class="sort-select">
+                    <option value="">Sort by</option>
+                    <option value="category">Category</option>
+                    <option value="price">Price</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <div class="popular-tags">
+                <h3>Popular Tags</h3>
+                <div class="tags-container">
+                    <span class="tag">Healthy</span>
+                    <span class="tag">Low fat</span>
+                    <span class="tag">Vegetarian</span>
+                    <span class="tag">Kid foods</span>
+                <span class="tag">Vitamins</span>
+                <span class="tag">Bread</span>
+                <span class="tag">Meat</span>
+                <span class="tag">Snacks</span>
+                <span class="tag">Tiffin</span>
+                <span class="tag">Lunch</span>
+                <span class="tag">Dinner</span>
+                <span class="tag">Breakfast</span>
+                <span class="tag">Fruit</span>
+                </div>
+            </div>
+        <div class="products-grid">
+            <!-- Product cards will go here -->
+        </div>
+    </section>
+    
     <footer>
         <div class="newsletter-section">
             <h2>Stay in the know!</h2>
@@ -171,7 +188,6 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-
     </script>
     <script>
         document.querySelectorAll('.category-card').forEach(card => {
@@ -182,11 +198,11 @@
                 card.style.animation = '';
             });
         });
-    
+
         function getRandomColor() {
             return `hsl(${Math.random() * 360}, 100%, 75%)`;
         }
-    
+
         document.querySelectorAll('.category-card').forEach(card => {
             card.addEventListener('click', () => {
                 const originalColor = card.style.backgroundColor;
@@ -196,8 +212,12 @@
                 }, 500);
             });
         });
+
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('click', () => {
+                tag.classList.toggle('selected');
+            });
+        });
     </script>
-    
-    
 </body>
 </html>
