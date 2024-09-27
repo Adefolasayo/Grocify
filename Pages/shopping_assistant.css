@@ -88,12 +88,19 @@ header {
     align-items: center;
     border-bottom: 1px solid #ddd;
 }
+table img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
 
 .chat-header img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-right: 10px;
+    object-fit: cover;
 }
 
 .chat-header .status {
