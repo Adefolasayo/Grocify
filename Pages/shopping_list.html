@@ -1,257 +1,130 @@
-<html></html>
- <head>
-  <title>
-   Shopping Cart
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5dc;
-            margin: 0;
-            padding: 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="shopping_list.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo_white.png" alt="Grocify">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="icon"><i class="fas fa-bell"></i></a>
+            <a href="#" class="icon"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="cart-item">
+                <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-m4AI0IhhR1Mr1fWl9g34EG78.png?st=2024-09-30T12%3A01%3A59Z&amp;se=2024-09-30T14%3A01%3A59Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T16%3A58%3A52Z&amp;ske=2024-09-30T16%3A58%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=01YPvca/9IQtVYcbCQ9aMhjxBP//0yM91KH5ulSjTwY%3D" alt="Pringles Single Pack" width="50" height="100">
+                <div>PRINGLES SINGLE PACK</div>
+                <div class="price">12,000</div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+                <div class="subtotal">12,000</div>
+                <div class="remove"><i class="fas fa-trash"></i></div>
+            </div>
+            <div class="cart-item">
+                <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-m4AI0IhhR1Mr1fWl9g34EG78.png?st=2024-09-30T12%3A01%3A59Z&amp;se=2024-09-30T14%3A01%3A59Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T16%3A58%3A52Z&amp;ske=2024-09-30T16%3A58%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=01YPvca/9IQtVYcbCQ9aMhjxBP//0yM91KH5ulSjTwY%3D" alt="Pringles Single Pack" width="50" height="100">
+                <div>PRINGLES SINGLE PACK</div>
+                <div class="price">12,000</div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="text" value="2">
+                    <button>+</button>
+                </div>
+                <div class="subtotal">24,000</div>
+                <div class="remove"><i class="fas fa-trash"></i></div>
+            </div>
+            <div class="cart-item">
+                <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-m4AI0IhhR1Mr1fWl9g34EG78.png?st=2024-09-30T12%3A01%3A59Z&amp;se=2024-09-30T14%3A01%3A59Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T16%3A58%3A52Z&amp;ske=2024-09-30T16%3A58%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=01YPvca/9IQtVYcbCQ9aMhjxBP//0yM91KH5ulSjTwY%3D" alt="Pringles Single Pack" width="50" height="100">
+                <div>PRINGLES SINGLE PACK</div>
+                <div class="price">12,000</div>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+                <div class="subtotal">12,000</div>
+                <div class="remove"><i class="fas fa-trash"></i></div>
+            </div>
+            <div class="bill">
+                <h2>BILL</h2>
+                <div>12,000</div>
+                <div>24,000</div>
+                <div>12,000</div>
+                <hr>
+                <div class="total">48,000</div>
+                <div>DELIVERY</div>
+                <div>8,000</div>
+                <hr>
+                <div class="total">SUB TOTAL</div>
+                <div>56,000</div>
+                <button class="proceed">Proceed To Payment</button>
+            </div>
+        </div>
+
+        <div class="chat-section">
+            <div class="chat">
+                <div class="chat-header">
+                    <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-DdVdQLV6s63CWLZCzR1Pn1Z0.png?st=2024-09-30T12%3A01%3A53Z&amp;se=2024-09-30T14%3A01%3A53Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A19%3A15Z&amp;ske=2024-10-01T01%3A19%3A15Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=32U3r7ojMgSl%2B3OVSVE77veU3je0B8fKjxmv6ajsAKA%3D" alt="User Avatar" width="40" height="40">
+                    <div>
+                        <div>Theresa Webb</div>
+                        <div class="status">• Active</div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Write a message...">
+                    <button><i class="fas fa-microphone"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.quantity').forEach(quantityDiv => {
+            const input = quantityDiv.querySelector('input');
+            const minusBtn = quantityDiv.querySelector('button:first-child');
+            const plusBtn = quantityDiv.querySelector('button:last-child');
+
+            minusBtn.addEventListener('click', () => updateQuantity(input, -1));
+            plusBtn.addEventListener('click', () => updateQuantity(input, 1));
+        });
+
+        function updateQuantity(input, change) {
+            let newValue = parseInt(input.value) + change;
+            if (newValue < 1) newValue = 1;
+            input.value = newValue;
+            updateSubtotal(input);
         }
-        .container {
-            width: 90%;
-            margin: 20px auto;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        function updateSubtotal(input) {
+            const cartItem = input.closest('.cart-item');
+            const price = parseInt(cartItem.querySelector('.price').textContent.replace(',', ''));
+            const quantity = parseInt(input.value);
+            const subtotal = price * quantity;
+            cartItem.querySelector('.subtotal').textContent = subtotal.toLocaleString();
+            updateTotal();
         }
-        .cart-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
+
+        function updateTotal() {
+            const subtotals = Array.from(document.querySelectorAll('.subtotal')).map(el => parseInt(el.textContent.replace(',', '')));
+            const total = subtotals.reduce((a, b) => a + b, 0);
+            document.querySelector('.bill .total').textContent = total.toLocaleString();
         }
-        .cart-item img {
-            width: 50px;
-            height: auto;
-            margin-right: 20px;
-        }
-        .cart-item div {
-            flex: 1;
-        }
-        .cart-item .price, .cart-item .quantity, .cart-item .subtotal {
-            text-align: center;
-        }
-        .cart-item .quantity {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .cart-item .quantity button {
-            background-color: #ccc;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-        .cart-item .quantity input {
-            width: 30px;
-            text-align: center;
-            border: 1px solid #ccc;
-            margin: 0 5px;
-        }
-        .cart-item .remove {
-            text-align: center;
-            cursor: pointer;
-        }
-        .bill {
-            float: right;
-            width: 30%;
-            border-left: 1px solid #ccc;
-            padding-left: 20px;
-        }
-        .bill h2 {
-            margin-top: 0;
-        }
-        .bill .total {
-            font-weight: bold;
-        }
-        .bill .proceed {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            border-radius: 5px;
-        }
-        .chat {
-            clear: both;
-            margin-top: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 10px;
-        }
-        .chat-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .chat-header img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        .chat-header .status {
-            color: green;
-            font-size: 12px;
-        }
-        .chat-input {
-            display: flex;
-            align-items: center;
-        }
-        .chat-input input {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            margin-right: 10px;
-        }
-        .chat-input button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-  </style>
- </head>
- <body>
-  <div class="container">
-   <div class="cart-item">
-    <img alt="Pringles Single Pack" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-m4AI0IhhR1Mr1fWl9g34EG78.png?st=2024-09-30T12%3A01%3A59Z&amp;se=2024-09-30T14%3A01%3A59Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T16%3A58%3A52Z&amp;ske=2024-09-30T16%3A58%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=01YPvca/9IQtVYcbCQ9aMhjxBP//0yM91KH5ulSjTwY%3D" width="50"/>
-    <div>
-     PRINGLES SINGLE PACK
-    </div>
-    <div class="price">
-     12,000
-    </div>
-    <div class="quantity">
-     <button>
-      -
-     </button>
-     <input type="text" value="1"/>
-     <button>
-      +
-     </button>
-    </div>
-    <div class="subtotal">
-     12,000
-    </div>
-    <div class="remove">
-     <i class="fas fa-trash">
-     </i>
-    </div>
-   </div>
-   <div class="cart-item">
-    <img alt="Pringles Single Pack" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-m4AI0IhhR1Mr1fWl9g34EG78.png?st=2024-09-30T12%3A01%3A59Z&amp;se=2024-09-30T14%3A01%3A59Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T16%3A58%3A52Z&amp;ske=2024-09-30T16%3A58%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=01YPvca/9IQtVYcbCQ9aMhjxBP//0yM91KH5ulSjTwY%3D" width="50"/>
-    <div>
-     PRINGLES SINGLE PACK
-    </div>
-    <div class="price">
-     12,000
-    </div>
-    <div class="quantity">
-     <button>
-      -
-     </button>
-     <input type="text" value="2"/>
-     <button>
-      +
-     </button>
-    </div>
-    <div class="subtotal">
-     24,000
-    </div>
-    <div class="remove">
-     <i class="fas fa-trash">
-     </i>
-    </div>
-   </div>
-   <div class="cart-item">
-    <img alt="Pringles Single Pack" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-m4AI0IhhR1Mr1fWl9g34EG78.png?st=2024-09-30T12%3A01%3A59Z&amp;se=2024-09-30T14%3A01%3A59Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T16%3A58%3A52Z&amp;ske=2024-09-30T16%3A58%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=01YPvca/9IQtVYcbCQ9aMhjxBP//0yM91KH5ulSjTwY%3D" width="50"/>
-    <div>
-     PRINGLES SINGLE PACK
-    </div>
-    <div class="price">
-     12,000
-    </div>
-    <div class="quantity">
-     <button>
-      -
-     </button>
-     <input type="text" value="1"/>
-     <button>
-      +
-     </button>
-    </div>
-    <div class="subtotal">
-     12,000
-    </div>
-    <div class="remove">
-     <i class="fas fa-trash">
-     </i>
-    </div>
-   </div>
-   <div class="bill">
-    <h2>
-     BILL
-    </h2>
-    <div>
-     12,000
-    </div>
-    <div>
-     24,000
-    </div>
-    <div>
-     12,000
-    </div>
-    <hr/>
-    <div class="total">
-     48,000
-    </div>
-    <div>
-     DELIVERY
-    </div>
-    <div>
-     8,000
-    </div>
-    <hr/>
-    <div class="total">
-     SUB TOTAL
-    </div>
-    <div>
-     56,000
-    </div>
-    <button class="proceed">
-     Proceed To Payment
-    </button>
-   </div>
-   <div class="chat">
-    <div class="chat-header">
-     <img alt="User Avatar" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-DdVdQLV6s63CWLZCzR1Pn1Z0.png?st=2024-09-30T12%3A01%3A53Z&amp;se=2024-09-30T14%3A01%3A53Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A19%3A15Z&amp;ske=2024-10-01T01%3A19%3A15Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=32U3r7ojMgSl%2B3OVSVE77veU3je0B8fKjxmv6ajsAKA%3D" width="40"/>
-     <div>
-      <div>
-       Theresa Webb
-      </div>
-      <div class="status">
-       • Active
-      </div>
-     </div>
-    </div>
-    <div class="chat-input">
-     <input placeholder="Write a message..." type="text"/>
-     <button>
-      <i class="fas fa-microphone">
-      </i>
-     </button>
-    </div>
-   </div>
-  </div>
- </body>
+    </script>
+</body>
 </html>
